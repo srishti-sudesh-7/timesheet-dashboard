@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: min(1200px, 95%);
+    margin: 40px auto;
+}
+
+.page-header {
+    margin-bottom: 35px;
+}
+
+.page-header h1 {
+    margin: 0;
+    color: #dc7e13;
+}
+
+.page-header p {
+    color: #555;
+    margin-top: 8px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #dc7e13;
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+    align-items: end;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #dc7e13;
+    color: white;
+}
+
+button:hover {
+    background: #b76608;
+}
+
+.monitor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    gap: 20px;
+}
+
+.monitor-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 18px;
+}
+
+.monitor-box h3 {
+    margin-top: 0;
+}
+
+.user-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.user-row:last-child {
+    border-bottom: none;
+}
+
+.table-wrapper{
+    max-height:500px;
+    overflow-y:auto;
+    overflow-x:auto;
+    border:1px solid #ddd;
+    border-radius:6px;
+    margin-top:15px;
+}
+
+.table-container{
+    max-height:500px;
+    overflow-y:auto;
+    overflow-x:auto;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.timesheet-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.timesheet-table thead th{
+    position: sticky;
+    top: 0;
+    background:#dc7e13;
+    color:white;
+    z-index:2;
+}
+
+.timesheet-table th,
+.timesheet-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.timesheet-table td:nth-child(4) {
+    max-width: 350px;
+    word-break: break-word;
+}
+
+.project-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+}
+
+.cost-result {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #dc7e13;
+}
+
+.empty-state {
+    padding: 20px;
+    text-align: center;
+    color: #666;
+}
+.list-container {
+    max-height: 250px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 10px 0 15px;
+    background: #fff;
+}
+.user-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.user-list li {
+    padding: 10px 14px;
+    border-bottom: 1px solid #eee;
+}
+
+.user-list li:last-child {
+    border-bottom: none;
+}
