@@ -1,4 +1,4 @@
-const TOKEN = "b40381eea24fa053c1f9815f0"
+const TOKEN = "-"
 
 const BASE_URL = "https://knightledger.iouring.in/api"
 
